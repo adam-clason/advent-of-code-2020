@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import Icon, { multiplication } from './components/common/icons';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Programs</h1>
+        <ul className="thumbnails">
+          <li>
+            <h3>Day 1: Multiplier</h3>
+            <Icon url={multiplication} />
+          </li>
+          <li>
+            <h3>Day 2: Something Else </h3>
+          </li>
+          <li>
+            <h3>Day 3: Another issue</h3>
+          </li>
+          <li>
+            <h3>Day 4: wat</h3>
+          </li>
+          <li> 
+            <h3>Day 5: hello there</h3>
+          </li>
+
+        </ul>
     </div>
   );
 }
